@@ -12,6 +12,8 @@ public class QueryProcessor {
                    " to emails for you!";
         } else if (query.toLowerCase().contains("name")) {
             return "THAMAADA-Team";
+        } else if query.toLowerCase().contains("9") {
+            return "18";
         }
         return "";
     }
