@@ -1,5 +1,4 @@
 package com.develogical;
-import Math;
 
 public class QueryProcessor {
 
