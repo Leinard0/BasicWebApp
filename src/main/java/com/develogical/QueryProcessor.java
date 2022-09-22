@@ -12,7 +12,7 @@ public class QueryProcessor {
                    " to emails for you!";
         } else if (query.toLowerCase().contains("name")) {
             return "THAMAADA-Team";
-        } else if query.toLowerCase().contains("plus") {
+        } else if (query.toLowerCase().contains("plus")) {
             return plus(query.toLowerCase());
         }
         return "";
