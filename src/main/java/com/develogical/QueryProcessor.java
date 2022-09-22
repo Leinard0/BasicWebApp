@@ -1,4 +1,5 @@
 package com.develogical;
+import Math;
 
 public class QueryProcessor {
 
@@ -27,6 +28,6 @@ public class QueryProcessor {
     public String largest(String query){
         String[] ary = query.split(" ");
         String[] ary2 = ary[8].split(",");
-        return ""+ Math.max(Integer.parseInt(ary2[0]),Integer.parseInt(ary[9]));
+        return ""+ Math.max(Integer.parseInt(ary2[0]), Integer.parseInt(ary[9]));
     }
 }
