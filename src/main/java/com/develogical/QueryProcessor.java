@@ -16,6 +16,8 @@ public class QueryProcessor {
             return plus(query.toLowerCase());
         } else if (query.toLowerCase().contains("largest")) {
             return largest(query.toLowerCase());
+        } else if (query.toLowerCase().contains("multiplied")) {
+            return largest(query.toLowerCase());
         }
         return "";
     }
@@ -23,6 +25,10 @@ public class QueryProcessor {
     public String plus(String query){
         String[] ary = query.split(" ");
         return ""+Integer.parseInt(ary[2])+Integer.parseInt(ary[4]);
+    }
+    public String multiply(String query){
+        String[] ary = query.split(" ");
+        return ""+(Integer.parseInt(ary[2])*Integer.parseInt(ary[5]));
     }
     public String largest(String query){
         String[] ary = query.split(" ");

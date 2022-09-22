@@ -41,6 +41,11 @@ public class QueryProcessorTest {
         assertThat(queryProcessor.process("what is 9 plus 0"), containsString("9"));
     }
 
+    public void multiplu() throws Exception {
+        assertThat(queryProcessor.process("what is 9 multiplied by 0"), containsString("0"));
+        assertThat(queryProcessor.process("what is 9 multiplied by 2"), containsString("18"));
+    }
+
     public void largest() throws Exception {
         assertThat(queryProcessor.process("which of the following numbers is the largest: 0, 10"), containsString("10"));
         assertThat(queryProcessor.process("which of the following numbers is the largest: 20, 10"), containsString("20"));
