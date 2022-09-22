@@ -24,7 +24,7 @@ public class QueryProcessor {
         String[] ary = query.split(" ");
         return ""+Integer.parseInt(ary[2])+Integer.parseInt(ary[4]);
     }
-    public String plus(String query){
+    public String largest(String query){
         String[] ary = query.split(" ");
         return ""+ Math.max(Integer.parseInt(ary[8][0]),Integer.parseInt(ary[9]));
     }
