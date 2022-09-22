@@ -14,6 +14,8 @@ public class QueryProcessor {
             return "THAMAADA-Team";
         } else if (query.toLowerCase().contains("plus")) {
             return plus(query.toLowerCase());
+        } } else if (query.toLowerCase().contains("largest")) {
+            return largest(query.toLowerCase());
         }
         return "";
     }
@@ -21,5 +23,9 @@ public class QueryProcessor {
     public String plus(String query){
         String[] ary = query.split(" ");
         return ""+Integer.parseInt(ary[2])+Integer.parseInt(ary[4]);
+    }
+    public String plus(String query){
+        String[] ary = query.split(" ");
+        return ""+ Math.max(Integer.parseInt(ary[8][0]),Integer.parseInt(ary[9]));
     }
 }
