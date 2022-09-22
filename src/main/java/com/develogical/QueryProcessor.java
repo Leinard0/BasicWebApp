@@ -9,7 +9,7 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.toLowerCase().contains("mycelium")) {
             return "Mycelium creates constant connection without contant attention by replying" +
-                   " to emails for you!"
+                   " to emails for you!";
         }
         return "";
     }
