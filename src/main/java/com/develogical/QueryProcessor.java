@@ -19,7 +19,7 @@ public class QueryProcessor {
     }
     
     public String plus(String query){
-        String ary = query.split(" ");
+        String[] ary = query.split(" ");
         return ""+Integer.parseInt(ary[2])+Integer.parseInt(ary[4]);
     }
 }
