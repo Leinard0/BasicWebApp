@@ -15,7 +15,7 @@ public class QueryProcessor {
             return "THAMAADA-Team";
         } else if (query.toLowerCase().contains("plus")) {
             return plus(query.toLowerCase());
-        } } else if (query.toLowerCase().contains("largest")) {
+        } else if (query.toLowerCase().contains("largest")) {
             return largest(query.toLowerCase());
         }
         return "";
