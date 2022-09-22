@@ -36,4 +36,9 @@ public class QueryProcessorTest {
         assertThat(queryProcessor.process("mycelium"), containsString("attention"));
     }
 
+    public void plus() throws Exception {
+        assertThat(queryProcessor.process("what is 9 plus 10"), containsString("19"));
+        assertThat(queryProcessor.process("what is 9 plus 0"), containsString("9"));
+    }
+
 }

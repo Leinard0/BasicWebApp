@@ -12,11 +12,14 @@ public class QueryProcessor {
                    " to emails for you!";
         } else if (query.toLowerCase().contains("name")) {
             return "THAMAADA-Team";
-        } else if query.toLowerCase().contains("916") {
-            return "916";
-        } else if query.toLowerCase().contains("9") {
-            return "18";
+        } else if (query.toLowerCase().contains("plus")) {
+            return plus(query.toLowerCase());
         }
         return "";
+    }
+    
+    public String plus(String query){
+        String[] ary = query.split(" ");
+        return ""+Integer.parseInt(ary[2])+Integer.parseInt(ary[4]);
     }
 }
