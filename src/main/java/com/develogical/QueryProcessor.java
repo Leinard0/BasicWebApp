@@ -10,6 +10,8 @@ public class QueryProcessor {
         } else if (query.toLowerCase().contains("mycelium")) {
             return "Mycelium creates constant connection without contant attention by replying" +
                    " to emails for you!";
+        } else if (query.toLowerCase().contains("name")) {
+            return "THAMAADA-Team";
         }
         return "";
     }
